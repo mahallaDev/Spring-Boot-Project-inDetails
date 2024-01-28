@@ -1,13 +1,25 @@
 package com.spring.validation.springvalidation.pojo;
 
+
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.NotBlank;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+
+
+@Valid
 public class ProductDetails {
 
+
+
   private int productNumber;
+
+  @NotBlank(message = "Phone Number should not blank")
   private String productName;
+
   private int productQuantity;
+
   private String productType;
 
   public int getProductNumber() {
