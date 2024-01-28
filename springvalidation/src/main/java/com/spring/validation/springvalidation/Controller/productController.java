@@ -1,18 +1,22 @@
 package com.spring.validation.springvalidation.Controller;
 
 import com.spring.validation.springvalidation.pojo.ProductDetails;
+
+import jakarta.validation.Valid;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+
+
 @RestController
 public class productController {
 
     //Need to send the Header in the request headers
     @PostMapping("/add/product")
-    public String addProduct(@RequestHeader(name = "keyName",required = false) String keyNames, @RequestBody ProductDetails productDetails)
+    public String addProduct(@Valid @RequestBody ProductDetails productDetails)
     {
         return "Product is created";
     }
