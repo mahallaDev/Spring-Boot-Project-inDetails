@@ -29,7 +29,7 @@ public class UserDetailsController {
         else{
 
             String paymentPage = "Show the invalid user page";
-            return new ResponseEntity<>(paymentPage, HttpStatus.NOT_FOUND);
+            return new ResponseEntity<>(paymentPage, HttpStatus.UNAUTHORIZED);
         }
     }
 

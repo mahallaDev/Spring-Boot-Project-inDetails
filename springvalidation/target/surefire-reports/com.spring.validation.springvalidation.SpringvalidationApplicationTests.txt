@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.spring.validation.springvalidation.SpringvalidationApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.147 s -- in com.spring.validation.springvalidation.SpringvalidationApplicationTests

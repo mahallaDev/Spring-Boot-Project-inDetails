@@ -4,6 +4,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springvalidation/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringIntegration/flipkartconsume/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringIntegration/icicibankproduce/pom.xml" />
       </list>
     </option>
   </component>
