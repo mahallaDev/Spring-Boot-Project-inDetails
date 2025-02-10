@@ -6,6 +6,7 @@ import com.icicibank.produce.icicibankproduce.services.UserDetailsServices;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.*;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.naming.Name;
@@ -41,6 +42,11 @@ public class UserDetailsController {
 
       UserAccountDetails  userAccountDetails= userDetailsServices.accountDetailsUser();
         return new ResponseEntity<>(userAccountDetails,HttpStatus.OK);
+    }
+
+    @RequestMapping(path = {"/message","/iphone/message"},method = {RequestMethod.GET,RequestMethod.POST})
+    public String printIphoneMessage(){
+        return "Welcome to Iphone World";
     }
 
 
