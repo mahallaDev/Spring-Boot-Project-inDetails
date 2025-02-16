@@ -21,6 +21,28 @@ public class StudentInfo {
     @Id
     public String emailId;
 
+    @Column
+    public String standard;
+    @Column
+    public String result;
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
+
+    public String getStandard() {
+        return standard;
+    }
+
+    public void setStandard(String standard) {
+        this.standard = standard;
+    }
+
+
+
     public String getFirstName() {
         return firstName;
     }

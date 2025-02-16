@@ -9,6 +9,24 @@ public class StudentInfoPojo {
     public String lastName;
     public String mobile;
     public String password;
+    public String standard;
+    public String result;
+
+    public String getStandard() {
+        return standard;
+    }
+
+    public void setStandard(String standard) {
+        this.standard = standard;
+    }
+
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
 
     public String getEmailId() {
         return emailId;
