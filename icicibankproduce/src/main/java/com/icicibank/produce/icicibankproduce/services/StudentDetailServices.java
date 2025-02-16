@@ -24,6 +24,8 @@ public class StudentDetailServices {
         studentInfo.setLastName(studentInfoPojo.getLastName());
         studentInfo.setMobile(studentInfoPojo.getMobile());
         studentInfo.setPassword(studentInfoPojo.getPassword());
+        studentInfo.setStandard(studentInfoPojo.getStandard());
+        studentInfo.setResult(studentInfo.getResult());
 
            studentDetailsRepo.save(studentInfo);
         return "User get registered";
@@ -42,7 +44,7 @@ public class StudentDetailServices {
         return studentInfoPojo;
     }
 
-    public void updateStudentResultAndStandard(StudentInfoPojo studentInfoPojo) {
+    public String updateStudentResultAndStandard(StudentInfoPojo studentInfoPojo) {
 
     StudentInfo studentInfo=new StudentInfo();
     studentInfo.setStandard(studentInfoPojo.getStandard());
@@ -54,7 +56,7 @@ public class StudentDetailServices {
     studentInfo.setPassword(studentInfoPojo.getPassword());
     studentDetailsRepo.save(studentInfo);
 
-
+    return "User details is getting updated";
 
     }
 
